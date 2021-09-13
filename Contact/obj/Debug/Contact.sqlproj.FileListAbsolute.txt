@@ -1,0 +1,6 @@
+C:\Users\Steve\source\Demo\TechniNet\DemoAPI\Contact\bin\Debug\Contact.dacpac
+C:\Users\Steve\source\Demo\TechniNet\DemoAPI\Contact\bin\Debug\Contact.dll
+C:\Users\Steve\source\Demo\TechniNet\DemoAPI\Contact\bin\Debug\Contact.pdb
+C:\Users\Steve\source\Demo\TechniNet\DemoAPI\Contact\obj\Debug\Contact.sqlproj.AssemblyReference.cache
+C:\Users\Steve\source\Demo\TechniNet\DemoAPI\Contact\obj\Debug\Contact.dll
+C:\Users\Steve\source\Demo\TechniNet\DemoAPI\Contact\obj\Debug\Contact.pdb
