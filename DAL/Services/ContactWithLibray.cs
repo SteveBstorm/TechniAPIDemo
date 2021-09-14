@@ -1,6 +1,7 @@
 ﻿using ADOLibrary;
 using DAL.Entities;
 using DAL.Interface;
+using Microsoft.Extensions.Configuration;
 using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
@@ -12,7 +13,14 @@ namespace DAL.Services
 {
     public class ContactWithLibray : IContactRepoLibrary
     {
-        private string _connectionString = @"Data Source=DESKTOP-RGPQP6I\TFTIC2014;Initial Catalog=TechniContact;Integrated Security=True;Connect Timeout=60;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+        private string _connectionString;
+        //= @"Data Source=DESKTOP-RGPQP6I\TFTIC2014;Initial Catalog=TechniContact;Integrated Security=True;Connect Timeout=60;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+
+        public ContactWithLibray(IConfiguration config)
+        {
+            _connectionString = config.GetConnectionString("default");
+        }
+
 
         private Connection seConnecter()
         {

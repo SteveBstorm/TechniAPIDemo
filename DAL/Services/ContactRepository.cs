@@ -1,5 +1,6 @@
 ﻿using DAL.Entities;
 using DAL.Interface;
+using Microsoft.Extensions.Configuration;
 using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
@@ -11,7 +12,15 @@ namespace DAL.Services
 {
     public class ContactRepository : IContactRepository
     {
-        private string _connectionString = @"Data Source=DESKTOP-RGPQP6I\TFTIC2014;Initial Catalog=TechniContact;Integrated Security=True;Connect Timeout=60;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+        private string _connectionString;
+        //= @"Data Source=DESKTOP-RGPQP6I\TFTIC2014;Initial Catalog=TechniContact;Integrated Security=True;Connect Timeout=60;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+
+
+
+        public ContactRepository(IConfiguration config)
+        {
+            _connectionString = config.GetConnectionString("default");
+        }
 
         public void Delete(int Id)
         {

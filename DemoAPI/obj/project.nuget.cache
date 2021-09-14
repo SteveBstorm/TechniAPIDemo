@@ -1,10 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "fUCZHVmQq92D/w08ycwaB7pMVDwcypohO3aH99p7QQWI4msi+aGMeS6jI7OeKHPu6YWxBswMLmngW8GFKQ52BQ==",
+  "dgSpecHash": "KVjztZc36L2lu3p2mG66CbvWblHiL2Q913svuJrIu6OLskgf7C3Sq403wr0ecy+/Pcd2NFAOlhI+UYFGHXL4Tw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Steve\\source\\Demo\\TechniNet\\DemoAPI\\DemoAPI\\DemoAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Steve\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\Steve\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\5.0.0\\microsoft.extensions.configuration.abstractions.5.0.0.nupkg.sha512",
+    "C:\\Users\\Steve\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.0\\microsoft.extensions.primitives.5.0.0.nupkg.sha512",
     "C:\\Users\\Steve\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\Steve\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
     "C:\\Users\\Steve\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",

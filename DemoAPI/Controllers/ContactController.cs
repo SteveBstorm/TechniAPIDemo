@@ -27,7 +27,6 @@ namespace DemoAPI.Controllers
             //maListe.Add("pizza");
             //maListe.Add("couscous");
         }
-
         [HttpGet]
         public IActionResult GetAll()
         {
