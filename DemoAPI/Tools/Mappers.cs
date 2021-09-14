@@ -9,13 +9,14 @@ namespace DemoAPI.Tools
 {
     public static class Mappers
     {
-        public static ContactView ToApi(this BusinessContact bc)
+        public static ContactForm ToApi(this BusinessContact bc)
         {
-            return new ContactView
+            return new ContactForm
             {
                 Id = bc.Id,
                 Email = bc.Email,
-                CompleteName = bc.FirstName + " " + bc.LastName
+                LastName = bc.LastName,
+                FirstName= bc.FirstName
             };
         }
 
